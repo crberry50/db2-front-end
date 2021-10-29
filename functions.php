@@ -8,7 +8,7 @@ function drawLine($person) {
     echo '<td>' . $person->LASTNAME . '</td>';
     echo '<td>' . $person->JOB . '</td>';
     echo '<td>' . $person->DEPTNAME . '</td>';
-    echo '</a></tr>
+    echo '</tr>
     ';
 }
 
@@ -107,7 +107,7 @@ function renderProduct($product) {
     }
 
     // Add the price to the bottom of the listing
-    echo '<h3 class="ds-heading-3 ds-text-align-right">$' . number_format($product->PRICE) . '</h3>
+    echo '<h3 class="ds-heading-3 ds-text-align-right">$' . number_format($product->PRICE, 2) . '</h3>
     ';
     echo '</div>';
 }
