@@ -7,15 +7,15 @@ require('connection.php');
 // Display title and description
 echo '<h2 class="ds-heading-1 ds-col-10">Company Info</h2>
 <p class="ds-col-10 ds-margin-b-2">Access information from our sample database that represents company data. You can also see some information
-on the <a href="products.php">products</a> that we sell, also pulled from the same databaase, but from a different table.</p>
+on the <a href="products.php">products</a> that we sell, also pulled from the same database, but from a different table.</p>
 ';
 
 // Collect the data from various endpoints
 
 // Start with the employee information - we use the API endpoint /getAllEmployees
-$rperfclient = new GuzzleHttp\Client([ 'base_uri'=>$apiBaseUri]);
-$rperfresponse = $rperfclient->request('GET', 'getAllEmployees');
-$content = $rperfresponse->getBody();
+$empclient = new GuzzleHttp\Client([ 'base_uri'=>$apiBaseUri]);
+$empresponse = $empclient->request('GET', 'getAllEmployees');
+$content = $empresponse->getBody();
 $jsonContent = json_decode($content, false);
 if ($jsonContent->success == 1) {
     $people = $jsonContent->data;
