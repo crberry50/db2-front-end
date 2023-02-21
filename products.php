@@ -9,7 +9,7 @@ echo '<h4 class="ds-heading-4 ds-margin-t-b-2"><a href="index.php">&lt back to e
 ';
 
 // Display title and description
-echo '<div class="ds-row"><h2 class="ds-heading-1">Product Info</h2>
+echo '<div class="ds-row"><h2 class="ds-heading-1">CBs Product Info</h2>
 <p class="ds-margin-b-2">This information relates to the products that are listed in the Db2 database running
 on AIX that we are connected to. These are in the PRODUCTS table of the sample database, and contain a mix of information
 including some XML formatted data.</p>
