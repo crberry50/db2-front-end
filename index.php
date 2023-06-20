@@ -21,7 +21,7 @@ if ($jsonContent->success == 1) {
     $people = $jsonContent->data;
 
     // Now we can render our page
-    echo '<h3 class="ds-heading-2 ds-col-10">CB Employees</h3>
+    echo '<h3 class="ds-heading-2 ds-col-10">Tom Employees</h3>
     <p class="ds-col-10 ds-margin-b-2">Here is a directory of all of our employees. Click on an employee number to get more information about that individual.</p>
     ';
     // The function drawTable can be found in functions.php
